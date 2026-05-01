@@ -377,6 +377,46 @@ p {
 }
 
 @media (max-width: 640px) {
+  h3 {
+    font-size: 22px;
+  }
+
+  .body-copy {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .mono-label,
+  .meta-line {
+    font-size: 11px;
+  }
+
+  .skill-tag {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .stat-value {
+    font-size: 28px;
+  }
+
+  .stat-label {
+    font-size: 15px;
+  }
+
+  .experience-title {
+    font-size: 26px;
+  }
+
+  .arrow-list li,
+  .dot-list li {
+    font-size: 16px;
+  }
+
+  .contact-link {
+    font-size: 18px;
+  }
+
   .project-card {
     width: 100%;
     max-width: 100%;
