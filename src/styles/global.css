@@ -378,9 +378,18 @@ p {
 
 @media (max-width: 640px) {
   .project-card {
-    width: min(98vw, 700px);
+    width: 100%;
+    max-width: 100%;
     height: auto;
     min-height: 540px;
+  }
+
+  .projects-list {
+    justify-items: stretch;
+  }
+
+  .project-list-item {
+    justify-content: stretch;
   }
 }
 
