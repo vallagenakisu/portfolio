@@ -1,0 +1,35 @@
+.section {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 36px;
+  padding-block: var(--section-gap);
+  border-bottom: 1px solid var(--border);
+}
+
+.labelCol h2 {
+  margin: 0;
+  position: sticky;
+  top: 40px;
+  font-family: var(--font-heading);
+  font-size: 34px;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.contentCol {
+  display: grid;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-block: var(--section-gap-mobile);
+  }
+
+  .labelCol h2 {
+    position: static;
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,115 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  backdrop-filter: blur(12px);
+  background: rgba(13, 13, 15, 0.8);
+  border-bottom: 1px solid var(--border);
+}
+
+.inner {
+  width: min(1000px, calc(100% - 80px));
+  margin: 0 auto;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: color 0.2s ease;
+}
+
+.brand:hover {
+  color: var(--text-primary);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.link {
+  position: relative;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 13px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 1px;
+  width: 100%;
+  background: var(--accent-violet);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.link:hover,
+.link:focus-visible,
+.active {
+  color: var(--text-primary);
+}
+
+.link:hover::after,
+.link:focus-visible::after,
+.active::after {
+  transform: scaleX(1);
+}
+
+.menuToggle {
+  display: none;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .inner {
+    width: min(1000px, calc(100% - 40px));
+    min-height: 64px;
+  }
+
+  .menuButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .links {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    left: 20px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 10px;
+    padding: 14px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menuToggle:checked + .menuButton + .links {
+    display: flex;
+  }
+}

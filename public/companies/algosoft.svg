@@ -1,0 +1,8 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AlgoSoft Technologies">
+  <rect width="640" height="420" rx="24" fill="#101017"/>
+  <rect x="22" y="22" width="596" height="376" rx="18" fill="#171727" stroke="#6C63FF" stroke-width="2"/>
+  <path d="M132 273L227 146L322 273H132Z" fill="#6C63FF" fill-opacity="0.88"/>
+  <circle cx="320" cy="206" r="22" fill="#A8FF78"/>
+  <text x="360" y="190" fill="#E8E6E0" font-size="44" font-family="Sora, Arial, sans-serif" font-weight="700">AlgoSoft</text>
+  <text x="360" y="236" fill="#888680" font-size="20" font-family="DM Mono, monospace" letter-spacing="1.2">TECHNOLOGIES</text>
+</svg>
