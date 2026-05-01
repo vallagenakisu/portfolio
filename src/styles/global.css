@@ -496,6 +496,7 @@ p {
   .experience-logo-column {
     min-height: 180px;
     padding: 20px;
+    justify-content: center;
   }
 
   .experience-content-column {
